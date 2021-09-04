@@ -1,0 +1,38 @@
+form {
+    display:flex;
+    flex-direction:column;
+    max-width: 30%;
+    margin:0 auto;
+}
+
+.toggle-form {
+    display:none;
+}
+
+
+.card {
+    display:none;
+    height: 500px;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+#card-greeting{
+    margin: 10% auto;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 30%;
+    color: #424242;
+}
+
+#card-message{
+  
+    padding: 10px;
+    padding-top: 10%;
+}
+
+
