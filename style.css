@@ -1,14 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #e2d5e6;
+    background-image: linear-gradient(315deg, #e2d5e6 0%, #e1d4e6 74%);
+}
+
+input[type="text"], textarea{
+    border: solid #000000 1px;
+    background-color: #e2d5e6;
+    background-image: linear-gradient(315deg, #e2d5e6 0%, #e1d4e6 74%);
+}
+
 form {
     display:flex;
     flex-direction:column;
     max-width: 30%;
     margin:0 auto;
+    margin-top: 10%;
+    
 }
 
 .toggle-form {
     display:none;
 }
 
+form label{
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+form select{
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    background-color: #e2d5e6;
+    background-image: linear-gradient(315deg, #e2d5e6 0%, #e1d4e6 74%);
+}
+
+form select option{
+    padding: 10px;
+}
+
+form input{
+    padding: 10px;
+}
+
+form textarea{
+    outline: none;
+}
+
+#button {
+    padding: 10px; 
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-top: 25px;
+    border: none;
+    background-color: #e6002b;
+    color: #fff;
+}
+
+#button:hover{
+    background-color: #424242;
+    cursor: pointer;
+}
 
 .card {
     display:none;
@@ -34,5 +96,4 @@ form {
     padding: 10px;
     padding-top: 10%;
 }
-
 
