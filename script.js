@@ -1,4 +1,6 @@
+let accessKey = 'YxzTASZniQ_3qkw0nP5bjO6395L6cgHU9KV6KRLkynU';
 
+let choice;
 
 const formInput = (e) => {
     e.preventDefault();
@@ -12,17 +14,61 @@ const formInput = (e) => {
     console.log(event);
     const message = form.message.value
 
-    if (event === "Happy Birthday!") {
-        card.style.backgroundColor = "yellow"
+    let celebrationCard = document.getElementById('celebration-card');
+
+    if (event === "Happy Birthday!") { 
+        console.log(celebrationCard);
+        let url = `https://api.unsplash.com/search/photos?page=1&query=birthday&client_id=${accessKey}`;
+        fetch(url)
+            .then(response => response.json())
+            .then(data = (data) => {
+                console.log(data);
+                let randomNumber = Math.round(Math.random() * 10);
+                console.log(randomNumber);
+                let imgUrl = data.results[randomNumber].urls['raw'];
+                console.log(imgUrl);
+                celebrationCard.style.backgroundImage = (`url('${imgUrl}')`)
+            });
     }
+
     if (event === "Happy Anniversary") {
-        card.style.backgroundColor = "blue"
+        let url = `https://api.unsplash.com/search/photos?page=1&query=anniversary&client_id=${accessKey}`;
+        fetch(url)
+            .then(response => response.json())
+            .then(data = (data) => {
+                console.log(data);
+                let randomNumber = Math.round(Math.random() * 9);
+                console.log(randomNumber);
+                let imgUrl = data.results[randomNumber].urls['raw'];
+                console.log(imgUrl);
+                celebrationCard.style.backgroundImage = (`url('${imgUrl}')`)
+            });
     }
     if (event === "Merry Christmas") {
-        card.style.backgroundColor = "red"
+        let url = `https://api.unsplash.com/search/photos?page=1&query=christmas&client_id=${accessKey}`;
+        fetch(url)
+            .then(response => response.json())
+            .then(data = (data) => {
+                console.log(data);
+                let randomNumber = Math.round(Math.random() * 9);
+                console.log(randomNumber);
+                let imgUrl = data.results[randomNumber].urls['raw'];
+                console.log(imgUrl);
+                celebrationCard.style.backgroundImage = (`url('${imgUrl}')`)
+            });
     }
     if (event === "Happy Hanukkah") {
-        card.style.backgroundColor = "green"
+        let url = `https://api.unsplash.com/search/photos?page=1&query=hanukkah&client_id=${accessKey}`;
+        fetch(url)
+            .then(response => response.json())
+            .then(data = (data) => {
+                console.log(data);
+                let randomNumber = Math.round(Math.random() * 9);
+                console.log(randomNumber);
+                let imgUrl = data.results[randomNumber].urls['raw'];
+                console.log(imgUrl);
+                celebrationCard.style.backgroundImage = (`url('${imgUrl}')`)
+            });
     }
 
 
