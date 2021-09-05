@@ -84,16 +84,17 @@ form textarea{
 
 #card-greeting{
     margin: 10% auto;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     padding: 10px;
     padding-top: 30%;
-    color: #424242;
+    color: #fff;
 }
 
 #card-message{
-  
+    color: #fff;
     padding: 10px;
     padding-top: 10%;
+    font-size: 18px;
 }
 
